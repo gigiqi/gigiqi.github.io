@@ -65,6 +65,14 @@
     </table>
     <a href="https://www.knowhow.or.kr/web/support/main.php"><h1 style="font-size: 2em; color: black; text-align:center">노무현 재단 후원하기</h1></a>
     <input style=" display: block; margin: 0px auto" type="button" name="sex" value="방명록 남기기">
+
+    <table id="bangmyeongrok">
+        <tr>
+            <th>ID</th>
+            <th>내용</th>
+        </tr>
+
+    </table>
 </div>
 </body>
 <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
@@ -82,11 +90,17 @@
         appId: "1:475258631124:web:739d09895b21f95eed1c41",
         measurementId: "G-KHQQZD9HSS"
     };
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
 
     window.onload = function () {
-        alert('초쿤히병신')
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+
+        firebase.firestore().collection("bangmyeongrok").onSnapshot(function(qs) {
+           qs.forEach(function (cs) {
+                console.log(cs.data()["naeyong"])
+           });
+        });
+
     }
 </script>
 </html>

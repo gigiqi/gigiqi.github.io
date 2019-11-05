@@ -97,7 +97,7 @@
 
         firebase.firestore().collection("bangmyeongrok").onSnapshot(function(qs) {
            qs.forEach(function (cs) {
-                console.log(cs.data()["naeyong"])
+                console.log(cs.data()["id"] + " : " + cs.data()["naeyong"])
            });
         });
 

@@ -47,24 +47,46 @@
     <a href="https://ko.wikipedia.org/wiki/노무현"><img style=" display: block; margin: 0px auto; " src="노무현.jpg" /></a>
     <img style=" display: block; margin: 0px auto; " src="노무현 친필 싸인.png" height="10%" />
     <h2 style="font-size: 2em; color: goldenrod; text-align: center">야! 기분 좋다!</h2>
-    <h5 style="font-size: 1em; color: goldenrod; text-align: center">이 페이지는 고 노무현 대통령님을 기리기 위한 웹페이지로 노무현 대통령님을 비하할 의도는 전혀 없습니다.</h2>
-        <h5 style="font-size: 2em; color: goldenrod; text-align: center">노무현 대통령의 생애를 다룬 작품들</h5>
-        <table style="width: 50%; height: 3em; margin: 0 auto">
-            <tr>
-                <td><img src="노무현입니다.jpg" height="50%"></td>
-                <td><img src="노무현과 바보들.jpg" height="50%"></td>
-                <td><img src="시민 노무현.jpg" height="50%"></td>
-                <td><img src="변호인.jpg" height="50%"></td>
-            </tr>
-            <tr>
-                <td>노무현입니다</td>
-                <td>노무현과 바보들</td>
-                <td>시민 노무현</td>
-                <td>변호인</td>
-            </tr>
-        </table>
-        <a href="https://www.knowhow.or.kr/web/support/main.php"><h1 style="font-size: 2em; color: black; text-align:center">노무현 재단 후원하기</h1></a>
-        <input style=" display: block; margin: 0px auto" type="button" name="sex" value="방명록 남기기">
+    <h5 style="font-size: 1em; color: goldenrod; text-align: center">이 페이지는 고 노무현 대통령님을 기리기 위한 웹페이지로 노무현 대통령님을 비하할 의도는 전혀 없습니다.</h5>
+    <h5 style="font-size: 2em; color: goldenrod; text-align: center">노무현 대통령의 생애를 다룬 작품들</h5>
+    <table style="width: 50%; height: 3em; margin: 0 auto">
+        <tr>
+            <td><img src="노무현입니다.jpg" height="50%"></td>
+            <td><img src="노무현과 바보들.jpg" height="50%"></td>
+            <td><img src="시민 노무현.jpg" height="50%"></td>
+            <td><img src="변호인.jpg" height="50%"></td>
+        </tr>
+        <tr>
+            <td>노무현입니다</td>
+            <td>노무현과 바보들</td>
+            <td>시민 노무현</td>
+            <td>변호인</td>
+        </tr>
+    </table>
+    <a href="https://www.knowhow.or.kr/web/support/main.php"><h1 style="font-size: 2em; color: black; text-align:center">노무현 재단 후원하기</h1></a>
+    <input style=" display: block; margin: 0px auto" type="button" name="sex" value="방명록 남기기">
 </div>
 </body>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyDDHFVZ2xm9dcsXvNiMLs1xomwC4Ro3aCo",
+        authDomain: "rohmuhyun-2c522.firebaseapp.com",
+        databaseURL: "https://rohmuhyun-2c522.firebaseio.com",
+        projectId: "rohmuhyun-2c522",
+        storageBucket: "rohmuhyun-2c522.appspot.com",
+        messagingSenderId: "475258631124",
+        appId: "1:475258631124:web:739d09895b21f95eed1c41",
+        measurementId: "G-KHQQZD9HSS"
+    };
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    window.onload = function () {
+        alert('초쿤히병신')
+    }
+</script>
 </html>
